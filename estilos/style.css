@@ -2,8 +2,15 @@
 
 /*
    Paleta de cores
-    Verde: #49a09d
-    Lilás: #5f2c82
+    Azul: #
+    Azul 2: #83DBE1
+    Azul 3: #00BAC6
+    Azul clarinho: #2F9AA8
+    Verde escuro: #083F4D
+    Verde musgo: #1A545C
+    Roxo: #8E00B9
+    Roxo escuro: #3E00CF
+
 */
  
 *{
@@ -14,7 +21,7 @@
 }
 
 body, html {
-     background-color: #5f2c82;
+     background-color: #8E00B9;
      height: 100vh;
      width: 100vw;
 
@@ -37,14 +44,18 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    
+    transition: width 0.5, height 0.5;
+    transition-timing-function: ease;
 }
 
-section#login > div#imagem{
+section#login > div#imagem {
     display: block;
     background: #49a09d url(../imagens/capybara_azul_sla.png) no-repeat;
-    background-size: cover;
-   
+    background-size: 100%;
+    background-position: 0ch;
     height: 200px;
+   
 }
 
 section#login > div#formulario{
